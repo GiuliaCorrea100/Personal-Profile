@@ -1,0 +1,422 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.subtitulo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+    font-family: 'HAPPY COMIC', sans-serif;
+}
+
+/* Ediçao de texto do menu  (inicio) */
+.inicio {
+    background-color: #BFEA7C;
+    padding-top: 1px;
+    height: 90vh;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+
+    margin: 30px;
+}
+
+.menu > li {
+    list-style: none;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu > li > a:hover {
+    color: #FD9B63;
+}
+/* (fim) */
+
+/* Introduçao (inicio) */
+.introducao {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagemintroducao {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.imgintroducao {
+    width: 300px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+.titulo > h1 {
+    font-family: 'HAPPY COMIC', sans-serif;
+    color: #874CCC;
+    text-shadow: 2px 0 #FD9B63, -2px 0 #FD9B63, 0 2px #FD9B63, 0 -2px #FD9B63,1px 1px #FD9B63, -1px -1px #FD9B63, 1px -1px #FD9B63, -1px 1px #FD9B63;
+}
+/*Fim*/
+
+/*Sobre (inicio)*/
+.sobremim {
+    background-color: rgb(174, 182, 102);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.textocentro {
+    width: 50%;   
+    max-width: 600px;
+    text-align: justify;
+    margin: auto 80px;
+}
+
+.sobre-elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-gang{
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+}
+/*Fim*/
+
+/*Curiosidades*/
+.curiosidades {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #4CCD99;
+    padding: 5%;
+}
+
+.subtitulo-curiosidades {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'HAPPY COMIC', sans-serif;
+    background-color: #4CCD99;
+}
+
+.painel {
+    height: fit-content;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+    background-color: #FFDB5C;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.painel > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    left: 20px;
+    margin: 20px;
+    opacity: 0;
+
+    font-family: 'HAPPY COMIC', sans-serif;
+}
+
+.painel.ativado {
+    flex: 5;
+}
+
+.painel.ativado h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/*elementos do painel*/
+.informacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ft-perf {
+    width: 95%;
+    max-width: 300px;
+}
+
+.info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.comida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* (fim) */
+
+/* Produtos (inicio) */
+.prod {
+    background-color: #FEB941;
+}
+
+.produtos {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #9DDE8B;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 35%;
+    cursor: pointer;
+}
+
+.card > a {
+    text-decoration: none;
+    color: #874CCC;
+}
+/* (fim) */
+
+/* Formulario de contato (inicio)*/
+
+.contate {
+    background-color: #D9EDBF;
+    padding: 20px;
+}
+
+.formContato {
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+
+    width: 80%;
+    max-width: 800px;
+}
+
+.form-group {
+    margin: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 95%;
+    padding: 10px;
+    border: 3px solid #2c59ad;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px; 
+    height: 50px;
+    font-size: 26px;
+    color: white;
+    background-color: #40A578;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3AA6B9;
+}
+
+.mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #874CCC;
+}
+
+/*Redes (inicio)*/
+
+.redes {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #A67B5B;
+}
+
+.redimg {
+    width: 50px;
+}
+
+/*fim*/
+
+/*Foto final (inicio)*/
+.fotoperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A67B5B;
+    width: 100%;
+}
+
+.soproborder {
+    width: 300px;
+    border-radius: 50%;
+}
+/*(Fim)*/
+
+/*PAGINA DE PRODUTOS CAMISAS-------------------------(INICIO)--*/
+.catalog {
+    background-color: #3AA6B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.product-card {
+    background-color: #BFEA7C;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    width: 400px;
+    height: 600px;
+}
+
+.product-card img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    color: #874CCC;
+    text-shadow: 2px 0 #FD9B63, -2px 0 #FD9B63, 0 2px #FD9B63, 0 -2px #FD9B63,1px 1px #FD9B63, -1px -1px #FD9B63, 1px -1px #FD9B63, -1px 1px #FD9B63;
+    font-weight: bold;
+}
+
+/*responsive mediaquerys (inicio)*/
+@media (max-width: 700px) {
+    .inicio {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .imagemintroducao {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .imgintroducao {
+        width: 70%;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .curiosidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 5%;
+    }
+
+    .painel {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .painel > h3 {
+        font-size: 2rem;
+    }
+
+}

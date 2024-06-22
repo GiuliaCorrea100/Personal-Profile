@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooby & Salsicha</title>
+    <link rel="icon" href="./imagens/symbol.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/happy-comic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="inicio">
+        <div class="menu">
+            <li><a href=""> Menu</a></li>
+            <li><a href="#sobremim1">Sobre</a></li>
+            <li><a href="#curiosidades1">Curiosidades</a></li>
+            <li><a href="#produtos1">Produtos</a></li>
+            <li><a href="#contate1">Contato</a></li>
+        </div>
+    
+        <div class="introducao">
+            <div class="titulo">
+                <h1>Scooby& Salsicha<br>
+                </h1>
+            </div>
+
+            <div class="imagemintroducao">
+                <img class="imgintroducao" src="./imagens/inicio.png" alt="salsicha e scooby">
+            </div>
+        </div>
+    </div>
+
+    <div id="sobremim1" class="sobremim">
+        <div class="subtitulo">
+            <h2>Sobre</h2>
+        </div>
+        <div class="sobre-elementos">
+            <div class="imagens-sobre">
+                <div><img class="img-gang" src="./imagens/gang1.png" alt="maquina de misterio"></div>
+            </div>
+            <div class="textocentro">
+                <p>Scooby e Salsicha são membros da equipe Mistério S/A, eles viajam na Máquina do Mistério, investigando casos de atividades paranormais.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="curiosidades1" class="subtitulo-curiosidades">
+        <h2>Curiosidades</h2>
+    </div>
+    <div class="curiosidades">
+        <div class="painel ativado">
+            <h3>Idade</h3>
+            <div class="informacao">
+                <div class="info">
+                    <img class="ft-perf" src="./imagens/cabeca scooby.png" alt="scooby">
+                    <p>7 anos</p>
+                </div>
+                <div class="info">
+                    <img class="ft-perf" src="./imagens/cabeca salsicha.png" alt="salsicha">
+                    <p>17 anos</p>
+                </div>
+            </div>
+        </div>
+        <div class="painel">
+            <h3>Comida Favorita</h3>
+            <div class="comida">
+                <img src="./imagens/Biscoitos_scooby.png" alt="comendo" width="50%">
+            </div>
+        </div>
+        <div class="painel">
+            <h3>Sobrinho do Scooby</h3>
+            <div class="comida">
+                <img src="./imagens/scoobyloo-fotor-bg-remover-2024062018733.png" alt="scoobyloo" width="20%">
+            </div>
+        </div>
+    </div>
+
+    <div class="prod">
+        <div id="produtos1" class="subtitulo">
+            <h3>Produtos</h3>
+        </div> 
+        <div class="produtos">
+            <div class="card">
+                <a href="./camisas.html"><h3 class="subtitulo">Camisas</h3></a>
+                <img class="svg-color" src="./imagens/svg's/shirt-solid.svg" alt="camisa" width="25%">
+            </div>
+            <div class="card">
+                <a href="./copos.html"><h3 class="subtitulo">Copos</h3></a>
+                <img class="svg-color" src="./imagens/svg's/mug-saucer-solid.svg" alt="copos" width="25%">
+            </div>
+        </div>
+    </div>
+
+    <div id="contate1" class="contate">
+        <div class="subtitulo"><h3>Entre em contato:</h3></div>
+            <form class="formContato">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" required></textarea>
+                </div>
+                <div class="subtitulo">
+                    <button type="button" class="btn" onclick="enviarFormulario()">Enviar</button>
+                </div>
+                <div id="mensagemConfirmacao" class="mensagem"></div>
+            </form>
+    </div>
+
+    <div class="redes">
+        <div class="cube">
+            <a href="https://www.instagram.com/scoobydoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="redimg" src="./imagens/svg's/instagram.svg" alt="Instagram"></a>
+        </div>
+        <div class="cube">
+            <a href="https://www.youtube.com/@wbkids"><img class="redimg" src="./imagens/svg's/youtube.svg" alt="Youtube"></a>
+        </div>
+        <div class="cube">
+            <a href="https://www.facebook.com/scoobydoo"><img class="redimg" src="./imagens/svg's/facebook.svg" alt="Facebook"></a>
+        </div>
+    </div>
+    <div class="fotoperfil">
+        <div>
+            <img class="soproborder" src="./imagens/profilepic.jpg" alt="foto de perfil">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
